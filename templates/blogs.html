@@ -13,7 +13,9 @@
 
     {% else %}
             {% for post in posts %}
-            <a href='/blog?id={{post.id}}'><h1>{{post.name}}</h1></a>
+            <a href='/blogs?id={{post.id}}'><h1>{{post.name}}</h1></a>
+
+            <a href='/singleUser?id={{post.owner}}'><h1>{{post.owner}} HELLO</h1></a>
             <p>{{post.body}}</p>
                 
             {% endfor %}
